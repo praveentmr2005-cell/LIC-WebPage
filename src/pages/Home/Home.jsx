@@ -18,28 +18,107 @@ function Home() {
   return (
     <>
       <Carousel />
-      
+
+      <section className="hero-cta">
+        <div className="container">
+          <div className="cta-grid">
+            <div className="cta-card">
+              <div className="cta-icon">
+                <i className="fa fa-shield"></i>
+              </div>
+              <h3>Comprehensive Coverage</h3>
+              <p>Protect what matters most with our wide range of insurance solutions</p>
+            </div>
+            <div className="cta-card">
+              <div className="cta-icon">
+                <i className="fa fa-users"></i>
+              </div>
+              <h3>Expert Guidance</h3>
+              <p>7+ years of experience helping families secure their future</p>
+            </div>
+            <div className="cta-card">
+              <div className="cta-icon">
+                <i className="fa fa-heart"></i>
+              </div>
+              <h3>Personalized Service</h3>
+              <p>Tailored insurance plans designed for your unique needs</p>
+            </div>
+            <div className="cta-card">
+              <div className="cta-icon">
+                <i className="fa fa-phone"></i>
+              </div>
+              <h3>24/7 Support</h3>
+              <p>We're here to help with claims, queries, and policy updates</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="main-container" className="main-container">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12 col-md-12 col-xs-12">
-              <div className="row text-center">
-                <h2 className="title">
-                  <span className="title-head">About Us</span>
-                </h2>
-              </div>
-              <div className="row solid-row" style={{ paddingTop: '30px', paddingBottom: '30px' }}>
-                <div className="col-md-6">
-                  <h3 className="page-content-title first">Raghunath,</h3>
-                  <p style={{ paddingRight: '50px' }}>
-                    Hello and welcome to our website!! I am Raghunath. T M an expert in Insurance 
-                    Consultancy services for all types of Insurance, such as Pension Plans, Health 
-                    Insurance, Term Plan, Children education / Marriage / Securing family's future etc.
-                  </p>
-                  <p>
-                    <Link className="btn btn-primary" to="/about">Read More</Link>
-                  </p>
+          <div className="row text-center">
+            <div className="section-header">
+              <span className="section-label">Get to Know Us</span>
+              <h2 className="title">
+                <span className="title-head">Your Trusted Insurance Partner</span>
+              </h2>
+              <p className="section-subtitle">Professional insurance consultancy with a personal touch</p>
+            </div>
+          </div>
+          <div className="about-content">
+            <div className="about-text-card">
+              <div className="author-badge">
+                <div className="author-icon">R</div>
+                <div>
+                  <h3 className="author-name">Raghunath T.M</h3>
+                  <p className="author-title">Insurance Consultant</p>
                 </div>
+              </div>
+              <p className="lead-text">
+                Hello and welcome! I am an expert in Insurance Consultancy services, specializing in
+                helping individuals and families secure their financial future through comprehensive
+                insurance solutions.
+              </p>
+              <p>
+                With over 7 years of experience, I've helped more than 200 individuals with retirement
+                planning, children's education planning, health insurance, and financial protection
+                against unforeseen events. I also assist corporates with Group Gratuity Schemes,
+                Superannuation, and Group Term Insurance.
+              </p>
+              <div className="services-list">
+                <div className="service-item">
+                  <i className="fa fa-check-circle"></i>
+                  <span>Pension Plans</span>
+                </div>
+                <div className="service-item">
+                  <i className="fa fa-check-circle"></i>
+                  <span>Health Insurance</span>
+                </div>
+                <div className="service-item">
+                  <i className="fa fa-check-circle"></i>
+                  <span>Term Plans</span>
+                </div>
+                <div className="service-item">
+                  <i className="fa fa-check-circle"></i>
+                  <span>Children's Education</span>
+                </div>
+                <div className="service-item">
+                  <i className="fa fa-check-circle"></i>
+                  <span>Investment Planning</span>
+                </div>
+                <div className="service-item">
+                  <i className="fa fa-check-circle"></i>
+                  <span>Corporate Solutions</span>
+                </div>
+              </div>
+              <div className="cta-buttons">
+                <Link className="btn btn-primary btn-lg" to="/about">
+                  Learn More About Us
+                  <i className="fa fa-arrow-right"></i>
+                </Link>
+                <Link className="btn btn-outline btn-lg" to="/contact">
+                  Get in Touch
+                </Link>
               </div>
             </div>
           </div>
