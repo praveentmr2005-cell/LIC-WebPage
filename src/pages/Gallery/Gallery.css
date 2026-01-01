@@ -1,0 +1,24 @@
+/* Modern Gallery Page Styles */
+#portfolio {
+  background: var(--gray-50);
+  padding: var(--spacing-3xl) 0;
+}
+
+.gallery-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.gallery-container img {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+  width: 100%;
+  height: auto;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-xl);
+}

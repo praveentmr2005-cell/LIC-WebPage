@@ -1,0 +1,35 @@
+/* Modern Footer Bottom Styles */
+.footer-bottom {
+  background: var(--gray-100);
+  padding: var(--spacing-md) 0;
+  text-align: center;
+  border-top: 1px solid var(--gray-200);
+}
+
+.footer-bottom a {
+  color: var(--gray-600);
+  text-decoration: none;
+  margin: 0 var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.footer-bottom a:hover {
+  color: var(--primary-color);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .footer-bottom a {
+    display: block;
+    margin: var(--spacing-xs) 0;
+  }
+}

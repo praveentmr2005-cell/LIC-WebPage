@@ -1,0 +1,142 @@
+/* Modern Contact Form Styles */
+.contact-three {
+  background: var(--gray-50);
+  padding: var(--spacing-3xl) 0;
+}
+
+.contact-three .widget-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-2xl);
+  text-align: center;
+  position: relative;
+  padding-bottom: var(--spacing-md);
+}
+
+.contact-three .widget-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: var(--radius-full);
+}
+
+.contact-three form {
+  background: var(--white);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  color: var(--gray-900);
+  background-color: var(--white);
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  font-family: var(--font-primary);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form-control::placeholder {
+  color: var(--gray-400);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-control:invalid:not(:placeholder-shown) {
+  border-color: var(--danger);
+}
+
+.form-control:valid:not(:placeholder-shown) {
+  border-color: var(--success);
+}
+
+.text-right {
+  text-align: right;
+  margin-top: var(--spacing-xl);
+}
+
+.btn-primary.solid {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary.solid:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.btn-primary.solid:active {
+  transform: translateY(0);
+}
+
+.error-container {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: #fee;
+  border: 1px solid var(--danger);
+  border-radius: var(--radius-md);
+  color: var(--danger);
+  display: none;
+}
+
+.error-container.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contact-three form {
+    padding: var(--spacing-lg);
+  }
+  
+  .text-right {
+    text-align: center;
+  }
+  
+  .btn-primary.solid {
+    width: 100%;
+  }
+}

@@ -1,0 +1,110 @@
+/* Modern Contact Page Styles */
+.main-container {
+  background: var(--gray-50);
+  padding: var(--spacing-3xl) 0;
+}
+
+.sidebar {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.sidebar.widget-title {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  padding-bottom: var(--spacing-md);
+}
+
+.sidebar.widget-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: var(--radius-full);
+}
+
+.sidebar iframe {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.contact-info-box:hover {
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.contact-info-box i {
+  font-size: var(--fs-2xl);
+  color: var(--primary-color);
+  min-width: 40px;
+  text-align: center;
+  padding-top: var(--spacing-xs);
+}
+
+.contact-info-box-content h4 {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-sm);
+}
+
+.contact-info-box-content p {
+  margin: 0;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.contact-info-box-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  display: inline-block;
+}
+
+.contact-info-box-content a:hover {
+  color: var(--primary-dark);
+  transform: translateX(4px);
+}
+
+.contact-info-box-content .fa {
+  font-size: var(--fs-xl);
+  margin-right: var(--spacing-md);
+  color: var(--primary-color);
+  transition: all var(--transition-fast);
+}
+
+.contact-info-box-content .fa:hover {
+  transform: scale(1.2);
+  color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding: var(--spacing-lg);
+  }
+  
+  .sidebar iframe {
+    height: 300px !important;
+  }
+}

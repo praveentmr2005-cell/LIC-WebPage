@@ -1,0 +1,113 @@
+/* Modern Products Page Styles */
+.shortcode-item {
+  background: var(--gray-50);
+  padding: var(--spacing-3xl) 0;
+}
+
+.products-thums {
+  margin-bottom: var(--spacing-xl);
+}
+
+.products-thums > div {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all var(--transition-base);
+  border: 2px solid var(--gray-200);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.products-thums > div:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-8px);
+}
+
+.products-thums img {
+  transition: transform var(--transition-base);
+  margin-bottom: var(--spacing-md);
+}
+
+.products-thums > div:hover img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.products-thums h4 {
+  font-size: var(--fs-base);
+  font-weight: 600;
+  color: var(--gray-900);
+  margin: var(--spacing-md) 0 0 0;
+  line-height: 1.4;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-thums a {
+  color: var(--gray-900);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.products-thums a:hover {
+  color: var(--primary-color);
+}
+
+.product-item {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  transition: all var(--transition-base);
+}
+
+.product-item:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+}
+
+.product-item img {
+  max-width: 200px;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
+.product-item h2 {
+  font-size: var(--fs-3xl);
+  margin: 0;
+}
+
+.product-item h2 a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.product-item h2 a:hover {
+  color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .product-item img {
+    max-width: 150px;
+  }
+  
+  .product-item h2 {
+    font-size: var(--fs-2xl);
+  }
+}

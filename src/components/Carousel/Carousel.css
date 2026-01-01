@@ -1,0 +1,134 @@
+/* Modern Carousel Styles */
+#main-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner .item {
+  position: relative;
+  display: none;
+  transition: opacity var(--transition-slow);
+}
+
+.carousel-inner .item.active {
+  display: block;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--spacing-sm);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: 2px solid var(--white);
+}
+
+.carousel-indicators li.active {
+  background: var(--primary-color);
+  width: 30px;
+  border-radius: var(--radius-full);
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  z-index: 10;
+  box-shadow: var(--shadow-lg);
+}
+
+.carousel-control:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control.left {
+  left: 20px;
+}
+
+.carousel-control.right {
+  right: 20px;
+}
+
+.carousel-control span {
+  font-size: var(--fs-2xl);
+}
+
+.down-arrow-transparent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--white));
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .carousel-indicators {
+    bottom: 15px;
+  }
+  
+  .carousel-control {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-control.left {
+    left: 10px;
+  }
+  
+  .carousel-control.right {
+    right: 10px;
+  }
+}
